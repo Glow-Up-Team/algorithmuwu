@@ -1,30 +1,12 @@
-/******************************************
- *                 odd.c                   *
- *               By Mau PL                 *
- *               Method #3                 *
- *                                         *
- ******************************************/
-
 #include <stdio.h>
+#include "odd3.h"
+
 
 int main(){
-    int Size;
-    int i;
-    int arr[10];
-    int Odd_Count = 0;
+    int len = 3;
+    int myArray[3];
 
-    printf("Please, add the Size of the array: ");
-    scanf("%d", &Size);
-
-    printf("Insert the elements of the array: ");
-    for(i = 0; i < Size; i++){
-        scanf("%d", &arr[i]);
-    }
-    //Checking if its odd
-    for(i = 0; i < Size; i++){
-        if(arr[i] % 2 == 0){
-            Odd_Count++;
-        }
-    }
-    printf("The Odd numbers in the array are: %d \n", Odd_Count);
+    
+    int numbersOdd = odd(myArray, len);
+    printf("%d\n", numbersOdd);
 }
