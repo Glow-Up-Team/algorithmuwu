@@ -5,24 +5,13 @@
  ******************************************/
 
 #include <stdio.h>
+#include "find.h"
+
+int arr[] = {315,153,135,12};
+int len = sizeof(arr)/sizeof(arr[0]);
+int catch = 153;
 
 int main(){
-    int array[] = {2,4,6,8,12};
-    int x = 8;
-
-    int arrayLen = sizeof array / sizeof array[0];
-    int index = -1; 
-
-    for (int i = 0; i < arrayLen; i++){
-        if(array[i] == x){
-            index = i; 
-            break;
-        }
-    }
-    if (index > -1){
-        printf("Find the index: %d\n",index);
-    }else {
-        printf("%d is not an element in the array \n");
-    }
-    return 0;
+    int index = find(arr, len, catch);
+    printf("The number %d was found in the index %d \n", arr[index], index);
 }
