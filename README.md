@@ -1,6 +1,6 @@
 # algorithmuwu
 
 # UPY Data Engineering Team
-  - Maurico Pacheco
+  - Mauricio Pacheco
   - Cesar Orlando
   - Javier Can
