@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "find.h"
+#include "find2.h"
 
 int arr[] = {315,153,135,12};
 int len = sizeof(arr)/sizeof(arr[0]);
